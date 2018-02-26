@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app="scotchApp">
+
+<head>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+    <script src="js/SliderIntern.js"></script>
+
+    <style type="text/css">
+        .bgimg {
+            background-image: url("images/Internship4.jpg");
+            height: auto; width: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+<div ng-controller="homeController">
+<nav class="navbar navbar-default">
+        <div class="container" >
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">Tuutkia Internship</a>
+            </div>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="#signup"><i class="fa fa-shield"></i> SignUp </a></li>
+                <li><a href="#addContacts"><i class="fa fa-comment"></i> Employement </a></li>
+                <li><a href="#create_lead"><i class="fa fa-comment"></i> Interest</a></li>
+                <li><a href="#lead_location"><i class="fa fa-comment"></i>Upload Document</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="main">
+        <div ng-view>
+
+        </div>
+    </div>
+
+</div>
+
+
+</body>
+
+</html>

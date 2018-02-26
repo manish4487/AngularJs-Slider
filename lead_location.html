@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="jumbotron text-center">
+        <h2> Upload Document</h2>
+    </div>
+
+    <label for="file">file input</label>
+    <input class="form-control-file" id="file" type="file" placeholder="EAD File" ng-value="eadfile">
+    </br>
+
+    <label for="address">Address</label>
+    <input type="Text" id="address" placeholder="Enter Your address" ng-model="address" class="form-control"/>
+    </br>
+
+    <div class="text">
+        All this info is collected by our app and packaged into an email with appropriate attachments (NDA) that is sent to us at internship@tuutkia.com
+    </div>
+
+    <button class="button" style="float: right;" ng-click="submit()">Next</button>
+    <div class="text">
+
+    </div>
+</div>
